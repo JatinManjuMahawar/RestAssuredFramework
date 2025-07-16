@@ -19,7 +19,7 @@ public class PetTests {
         Response res = PetEndpoints.createPet();
         res.then().log().all();
         res.then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("jsonschema.json"));
-        Assert.assertEquals(res.statusCode(), 200);
+        Assert.assertEquals(res.statusCode(), 201);
         Assert.assertTrue(res.time() < 5000L);
         Assert.assertEquals(res.header("Content-Type"), "application/json");
         Assert.assertEquals(res.body().jsonPath().getInt("category.id"), 1);
