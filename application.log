@@ -1,0 +1,69 @@
+2024-08-02 07:59:27,091 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://petstore.swagger.io:443
+2024-08-02 07:59:27,159 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to petstore.swagger.io:443
+2024-08-02 07:59:28,201 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2024-08-02 07:59:28,203 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2024-08-02 07:59:28,203 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2024-08-02 07:59:28,204 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2024-08-02 07:59:28,204 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2024-08-02 07:59:28,205 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /v2/pet HTTP/1.1
+2024-08-02 07:59:28,205 DEBUG [main] wire:73 -  >> "POST /v2/pet HTTP/1.1[\r][\n]"
+2024-08-02 07:59:28,206 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2024-08-02 07:59:28,207 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2024-08-02 07:59:28,207 DEBUG [main] wire:73 -  >> "Content-Length: 221[\r][\n]"
+2024-08-02 07:59:28,207 DEBUG [main] wire:73 -  >> "Host: petstore.swagger.io[\r][\n]"
+2024-08-02 07:59:28,208 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2024-08-02 07:59:28,208 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)[\r][\n]"
+2024-08-02 07:59:28,208 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-08-02 07:59:28,210 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2024-08-02 07:59:28,210 DEBUG [main] headers:278 - >> POST /v2/pet HTTP/1.1
+2024-08-02 07:59:28,210 DEBUG [main] headers:281 - >> Accept: */*
+2024-08-02 07:59:28,211 DEBUG [main] headers:281 - >> Content-Type: application/json
+2024-08-02 07:59:28,211 DEBUG [main] headers:281 - >> Content-Length: 221
+2024-08-02 07:59:28,211 DEBUG [main] headers:281 - >> Host: petstore.swagger.io
+2024-08-02 07:59:28,211 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2024-08-02 07:59:28,212 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+2024-08-02 07:59:28,212 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2024-08-02 07:59:28,212 DEBUG [main] wire:73 -  >> "{[\r][\n]"
+2024-08-02 07:59:28,213 DEBUG [main] wire:73 -  >> "  "category" : {[\r][\n]"
+2024-08-02 07:59:28,213 DEBUG [main] wire:73 -  >> "    "id" : 1,[\r][\n]"
+2024-08-02 07:59:28,213 DEBUG [main] wire:73 -  >> "    "name" : "New Category"[\r][\n]"
+2024-08-02 07:59:28,214 DEBUG [main] wire:73 -  >> "  },[\r][\n]"
+2024-08-02 07:59:28,214 DEBUG [main] wire:73 -  >> "  "tags" : [ {[\r][\n]"
+2024-08-02 07:59:28,214 DEBUG [main] wire:73 -  >> "    "id" : 1,[\r][\n]"
+2024-08-02 07:59:28,214 DEBUG [main] wire:73 -  >> "    "name" : "NewTag"[\r][\n]"
+2024-08-02 07:59:28,215 DEBUG [main] wire:73 -  >> "  } ],[\r][\n]"
+2024-08-02 07:59:28,215 DEBUG [main] wire:73 -  >> "  "id" : 1,[\r][\n]"
+2024-08-02 07:59:28,215 DEBUG [main] wire:73 -  >> "  "status" : "not available",[\r][\n]"
+2024-08-02 07:59:28,215 DEBUG [main] wire:73 -  >> "  "name" : "Doggie",[\r][\n]"
+2024-08-02 07:59:28,216 DEBUG [main] wire:73 -  >> "  "PhotoURL" : null[\r][\n]"
+2024-08-02 07:59:28,216 DEBUG [main] wire:87 -  >> "}"
+2024-08-02 07:59:28,441 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-08-02 07:59:28,443 DEBUG [main] wire:73 -  << "Date: Fri, 02 Aug 2024 02:29:32 GMT[\r][\n]"
+2024-08-02 07:59:28,443 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
+2024-08-02 07:59:28,444 DEBUG [main] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2024-08-02 07:59:28,444 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2024-08-02 07:59:28,444 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2024-08-02 07:59:28,444 DEBUG [main] wire:73 -  << "Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]"
+2024-08-02 07:59:28,445 DEBUG [main] wire:73 -  << "Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]"
+2024-08-02 07:59:28,445 DEBUG [main] wire:73 -  << "Server: Jetty(9.2.9.v20150224)[\r][\n]"
+2024-08-02 07:59:28,445 DEBUG [main] wire:73 -  << "[\r][\n]"
+2024-08-02 07:59:28,446 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2024-08-02 07:59:28,447 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2024-08-02 07:59:28,447 DEBUG [main] headers:265 - << Date: Fri, 02 Aug 2024 02:29:32 GMT
+2024-08-02 07:59:28,447 DEBUG [main] headers:265 - << Content-Type: application/json
+2024-08-02 07:59:28,448 DEBUG [main] headers:265 - << Transfer-Encoding: chunked
+2024-08-02 07:59:28,448 DEBUG [main] headers:265 - << Connection: keep-alive
+2024-08-02 07:59:28,448 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2024-08-02 07:59:28,448 DEBUG [main] headers:265 - << Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2024-08-02 07:59:28,449 DEBUG [main] headers:265 - << Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2024-08-02 07:59:28,449 DEBUG [main] headers:265 - << Server: Jetty(9.2.9.v20150224)
+2024-08-02 07:59:28,454 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2024-08-02 07:59:28,460 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: application/json
+2024-08-02 07:59:28,461 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-08-02 07:59:28,504 DEBUG [main] wire:73 -  << "8c[\r][\n]"
+2024-08-02 07:59:28,504 DEBUG [main] wire:87 -  << "{"id":1,"category":{"id":1,"name":"New Category"},"name":"Doggie","photoUrls":[],"tags":[{"id":1,"name":"NewTag"}],"status":"not available"}"
+2024-08-02 07:59:28,506 DEBUG [main] wire:73 -  << "[\r][\n]"
+2024-08-02 07:59:28,506 DEBUG [main] wire:73 -  << "0[\r][\n]"
+2024-08-02 07:59:28,507 DEBUG [main] wire:73 -  << "[\r][\n]"
+2024-08-02 07:59:28,507 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@67de7a99
+2024-08-02 07:59:28,507 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely

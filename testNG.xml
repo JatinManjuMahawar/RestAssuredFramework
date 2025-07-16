@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TutorialsNinja Suite">
+    <listeners>
+        <listener class-name="Listeners.ListenersClass"/>
+    </listeners>
+    <test name="TutorialsNinja Tests">
+        <classes>
+            <!--<class name="tests.UserTests"/>
+            <class name="tests.StoreTests"/>-->
+            <class name="tests.PetTests"/>
+            <class name="endpoints.PetEndpoints"/>
+        </classes>
+    </test>
+</suite>
